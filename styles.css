@@ -1,0 +1,59 @@
+.selector-for-some-widget {
+    box-sizing: content-box;
+}
+
+header {
+    position: fixed;
+    top: 12px;
+    left: 40%;
+
+}
+
+
+main {
+    width: 60%;
+    margin: 7em auto 2em;
+}
+
+body {
+    color: rgb(16, 16, 199);
+    background-color: aliceblue;
+}
+
+button:hover,
+input:hover {
+    border-color: var(--hover);
+    color: darkblue;
+    box-shadow: 0 0.6em 0.6em -0.4em;
+    transform: translateY(-0.25em);
+    cursor: pointer;
+}
+
+.thumb {
+    height: 500px;
+    border: 7px solid darkblue;
+    border-radius: 30px;
+    margin: 10px 5px 0 0;
+    box-shadow: 0 0.8em 0.8em -0.4em;
+}
+
+.diVideo,
+.output {
+    display: flex;
+    margin: 20px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+button {
+    margin-left: 0.5em;
+}
+
+.diVideo {
+    flex-direction: column;
+}
+
+.buttons {
+    display: none;
+}
