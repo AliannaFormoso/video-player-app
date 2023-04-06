@@ -33,14 +33,14 @@ input:hover {
     height: 500px;
     border: 7px solid darkblue;
     border-radius: 30px;
-    margin: 10px 5px 0 0;
+
     box-shadow: 0 0.8em 0.8em -0.4em;
 }
 
 .diVideo,
 .output {
     display: flex;
-    margin: 20px;
+    margin-bottom: 20px;
     flex-direction: row;
     align-items: center;
     justify-content: center;
@@ -56,4 +56,23 @@ button {
 
 .buttons {
     display: none;
+}
+
+#videoDetails {
+    display: none;
+}
+
+h3,
+p {
+    border: 1px dotted darkblue;
+
+    padding: 5px;
+}
+
+h3 {
+    border-radius: 6px 6px 0 0;
+}
+
+p {
+    border-radius: 0px 0px 6px 6px;
 }

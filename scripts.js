@@ -33,17 +33,27 @@ function handleFileSelect(evt) {
 
 
 
-                /*- Deletes previous div, insertBefore Inserts a new element before the first  
-                    secondary element and displays buttons*/
+                /*- Deletes previous div*/
                 document.getElementById("opening").style.display = "none";
 
+                // Shows video's details
+                let videoDetails = document.getElementById("files").files[0];
+                names = videoDetails.name
+                sizes = videoDetails.size
+                types = videoDetails.type
+                dates = videoDetails.lastModifiedDate
+                let text = '<strong>Name:</strong> ' + names + '<br>' + '<strong>Size:</strong> ' + sizes + '<br>' + '<strong>Type:</strong> ' + types + '<br>' + '<strong>Last Date Modified:</strong> ' + dates;
+
+                document.getElementById('parvideoDetails').innerHTML = text
+
+                // insertBefore Inserts a new element before the first secondary element and displays buttons
                 setTimeout(function () {
                     document.getElementById("list").insertBefore(span, null);
                     document.getElementById("buttons").style.display = "flex";
+                    document.getElementById("videoDetails").style.display = "block";
                 }, 1500);
             };
         })(f);
-
 
         reader.readAsDataURL(f);
     }
